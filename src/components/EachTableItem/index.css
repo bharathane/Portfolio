@@ -10,7 +10,7 @@
 }
 
 .text-deco {
-  text-decoration: underline;
+  color: rgb(91, 147, 192) !important;
 }
 
 @media (max-width: 400px) {

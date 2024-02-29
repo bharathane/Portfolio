@@ -161,6 +161,24 @@ const projectsDetails = [
   },
   {
     id: uuidv4(),
+    name: "Number Facts",
+    url: "https://factsabtnum.ccbp.tech/",
+    category: "DYNAMIC",
+    repoLink: "https://github.com/bharathane/Facts-About-Numbers.git",
+    imageUrl:
+      "https://res.cloudinary.com/dr2jqbir9/image/upload/v1709207878/Number-Facts_ykt0e3.png",
+  },
+  {
+    id: uuidv4(),
+    name: "Country Search",
+    url: "https://srchcountry.ccbp.tech/",
+    category: "DYNAMIC",
+    repoLink: "https://github.com/bharathane/Country-Search.git",
+    imageUrl:
+      "https://res.cloudinary.com/dr2jqbir9/image/upload/v1709208659/Country-Search_gfg2or.png",
+  },
+  {
+    id: uuidv4(),
     name: "Food Munch",
     url: "https://bharath361.ccbp.tech/",
     category: "RESPONSIVE",
@@ -214,7 +232,7 @@ const Projects = () => {
             single={each}
             key={each.id}
             getIdFromChild={getIdFromChild}
-            isActive={each.id === btnId}
+            isActive={each.category === btnId}
           />
         ))}
       </ul>
