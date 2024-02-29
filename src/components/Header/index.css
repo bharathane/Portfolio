@@ -1,0 +1,93 @@
+nav {
+  width: 100vw;
+  height: 9vh;
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  background-color: #fcf9f9;
+  padding: 5px;
+  background-color: #202020;
+  box-sizing: border-box;
+}
+
+.profile-pic {
+  width: 13%;
+  border-radius: 50%;
+}
+
+.profile-pic-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 9vh;
+  font-size: 100%;
+  font-weight: 500;
+  font-family: "Roboto";
+  gap: 13px;
+  color: #f1f5f9;
+}
+
+.nav-links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-left: 40%;
+}
+
+.nav-links {
+  text-decoration: none;
+  font-size: 100%;
+  font-weight: 500;
+  font-family: "Roboto";
+  margin-left: 5px;
+  color: #f1f5f9;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.menu-links-container {
+  display: none;
+}
+.menu-links-container {
+  display: none;
+}
+.hide-menu-links {
+  display: none;
+}
+@media (max-width: 576px) {
+  .profile-pic {
+    display: none;
+  }
+  .profile-pic-container {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 390px) {
+  .nav-links-container {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+    margin-left: 55%;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 26px;
+    color: white;
+  }
+  .menu-links-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    gap: 5px;
+    background-color: #000000;
+  }
+  .profile-pic-container {
+    font-size: 70%;
+  }
+}

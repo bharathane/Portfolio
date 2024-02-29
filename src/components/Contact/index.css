@@ -1,0 +1,93 @@
+.contact-container {
+  width: 100vw;
+  height: 91vh;
+  margin: 0px;
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+form {
+  border: 2px solid white;
+  width: 35vw;
+  height: 60vh;
+  padding: 20px;
+  border-top-left-radius: 35px;
+
+  border-bottom-right-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+form input {
+  width: 30vw;
+  height: 5vh;
+  padding: 7px;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: #202020;
+  border: none;
+  color: white;
+  font-family: "Roboto";
+  font-weight: 100;
+  font-size: 18px;
+}
+
+form textarea {
+  min-width: 30vw;
+  max-width: 30vw;
+  padding: 6px;
+  min-height: 20vh;
+  max-height: 20vh;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: #202020;
+  border: none;
+  color: white;
+  font-weight: 100;
+  font-family: "Roboto";
+  font-size: 18px;
+}
+
+form label {
+  color: rgb(91, 147, 192);
+  margin: 8px;
+}
+
+form button {
+  width: 10vw;
+  height: 5vh;
+  border-radius: 10px;
+  background-color: rgb(91, 147, 192);
+  color: rgb(241, 229, 229);
+  outline: none;
+}
+
+form button:hover {
+  background-color: rgb(58, 233, 58);
+  color: black;
+}
+
+@media (max-width: 460px) {
+  form input {
+    width: 60vw;
+  }
+
+  form {
+    width: 70vw;
+    height: 60vh;
+  }
+
+  form textarea {
+    max-height: 10vh;
+    min-width: 60vw;
+  }
+  form button {
+    width: 22vw;
+  }
+}

@@ -1,0 +1,26 @@
+.tabitem-list {
+  list-style: none;
+}
+
+.tabitem-list button {
+  background: none;
+  outline: none;
+  border: none;
+  color: white;
+}
+
+.text-deco {
+  text-decoration: underline;
+}
+
+@media (max-width: 400px) {
+  .tabitem-list button {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .tabitem-list button {
+    font-size: 6px;
+  }
+}

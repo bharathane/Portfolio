@@ -1,0 +1,98 @@
+.about-container {
+  background-color: black;
+  width: 100vw;
+  padding: 20px;
+  color: white;
+  font-family: "Roboto";
+}
+
+.hello-viewer {
+  font-weight: 20;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.description-para {
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+
+  font-weight: 10 !important;
+  font-family: "Roboto";
+  margin-top: 20px;
+}
+
+.education-container {
+  width: 40vw;
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid white;
+  border-top-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+
+.course-container {
+  margin-left: 30px;
+  font-family: "Roboto";
+  margin-top: 10px;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills-education-con {
+  display: flex;
+  align-items: center;
+}
+
+.bharath-name-college {
+  color: rgb(91, 147, 192);
+}
+
+@media (max-width: 760px) {
+  .hello-viewer {
+    font-size: 18px;
+  }
+
+  .description-para {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .education-heading {
+    font-size: 20px;
+  }
+  .bharath-name-college {
+    font-size: 16px;
+  }
+  .course-container p {
+    font-size: 12px;
+  }
+  .skills-education-con {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 400px) {
+  .hello-viewer {
+    font-size: 13px;
+  }
+
+  .description-para {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+
+  .education-heading {
+    font-size: 16px;
+  }
+  .bharath-name-college {
+    font-size: 10px;
+  }
+  .course-container p {
+    font-size: 8px;
+  }
+}

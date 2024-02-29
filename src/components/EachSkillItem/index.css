@@ -1,0 +1,22 @@
+.skill-item-container {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 8px;
+  width: 20%;
+  margin: 10px;
+}
+@media (max-width: 575px) {
+  .skill-item-container {
+    justify-content: start;
+    width: 40%;
+  }
+}
+
+.skill-image {
+  height: 40px;
+}
+
+.skill-text {
+  font-size: 20px;
+}
