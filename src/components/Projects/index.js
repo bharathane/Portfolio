@@ -53,6 +53,15 @@ const projectsDetails = [
   },
   {
     id: uuidv4(),
+    name: "Spur.fi",
+    url: "https://spur-fit.vercel.app/",
+    category: "SINGLE PAGE",
+    repoLink: "https://github.com/bharathane/spur-fit.git",
+    imageUrl:
+      "https://res.cloudinary.com/dr2jqbir9/image/upload/v1709293190/gsap-animations_y6cy38.png",
+  },
+  {
+    id: uuidv4(),
     name: "Gradient Generator",
     url: "https://gradient-generator-1btp.onrender.com/",
     category: "SINGLE PAGE",
