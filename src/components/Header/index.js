@@ -56,7 +56,7 @@ const Header = () => {
       </nav>
 
       <div className={setStyleForMenuLinks}>
-        <Link to="/Home" className="nav-links">
+        <Link to="/" className="nav-links">
           <p>Home</p>
         </Link>
         <hr />
