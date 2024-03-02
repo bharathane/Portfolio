@@ -58,16 +58,8 @@ nav {
 .hide-menu-links {
   display: none;
 }
-@media (max-width: 576px) {
-  .profile-pic {
-    display: none;
-  }
-  .profile-pic-container {
-    font-size: 80%;
-  }
-}
 
-@media (max-width: 390px) {
+@media (min-width: 270px) and (max-width: 500px) {
   .nav-links-container {
     display: none;
   }
@@ -89,5 +81,14 @@ nav {
   }
   .profile-pic-container {
     font-size: 70%;
+  }
+}
+
+@media (max-width: 576px) {
+  .profile-pic {
+    display: none;
+  }
+  .profile-pic-container {
+    font-size: 80%;
   }
 }
