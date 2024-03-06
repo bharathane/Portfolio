@@ -222,6 +222,15 @@ const projectsDetails = [
     imageUrl:
       "https://res.cloudinary.com/dr2jqbir9/image/upload/v1709200341/Movie-Tickets_pc36rx.png",
   },
+  {
+    id: uuidv4(),
+    name: "Event Registration",
+    url: "https://event-registration-frontend.vercel.app/",
+    category: "SINGLE PAGE",
+    repoLink: "https://github.com/bharathane/Event-Registration-Frontend.git",
+    imageUrl:
+      "https://res.cloudinary.com/dr2jqbir9/image/upload/v1709705384/Event-Registration-Assignment_fuxndt.png",
+  },
 ];
 
 const Projects = () => {
