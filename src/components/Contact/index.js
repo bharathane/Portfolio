@@ -1,9 +1,50 @@
 import React, { useRef } from "react";
+import { useEffect } from "react";
+import gsap from "gsap";
 import emailjs from "@emailjs/browser";
 
 import "./index.css";
 
 const Contact = () => {
+  useEffect(() => {
+    gsap.fromTo(
+      "#subjectInputElement",
+      {
+        x: -500,
+      },
+      { x: 0, duration: 1 }
+    );
+    gsap.fromTo(
+      "#emailInputelement",
+      {
+        x: 900,
+      },
+      { x: 0, duration: 1 }
+    );
+    gsap.fromTo(
+      ".submitButtonforForm",
+      {
+        x: 900,
+      },
+      { x: 0, duration: 1 }
+    );
+
+    gsap.fromTo(
+      "#textareaInputElement",
+      {
+        x: -500,
+      },
+      { x: 0, duration: 1 }
+    );
+
+    gsap.fromTo(
+      "lable",
+      {
+        opacity: 0,
+      },
+      { opacity: 1, duration: 2 }
+    );
+  });
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -28,9 +69,10 @@ const Contact = () => {
     <div className="contact-container">
       <form ref={form} onSubmit={sendEmail}>
         <div>
-          <label>Subject</label>
+          <lable htmlFor="subjectInputElement">Subject</lable>
           <br />
           <input
+            id="subjectInputElement"
             type="text"
             placeholder="Enter Subject"
             name="Subject"
@@ -39,10 +81,11 @@ const Contact = () => {
           <br />
         </div>
         <div>
-          <label>Email</label>
+          <lable htmlFor="emailInputelement">Email</lable>
           <br />
           <input
             type="email"
+            id="emailInputelement"
             placeholder="You Mail Here"
             name="Email"
             required
@@ -50,9 +93,10 @@ const Contact = () => {
           <br />
         </div>
         <div>
-          <label>Message</label>
+          <lable htmlFor="textareaInputElement">Message</lable>
           <br />
           <textarea
+            id="textareaInputElement"
             rows={15}
             cols={20}
             placeholder="Please Enter Message Here"
@@ -61,7 +105,9 @@ const Contact = () => {
           ></textarea>
           <br />
         </div>
-        <button type="submit">Send</button>
+        <button type="submit" className="submitButtonforForm">
+          Send
+        </button>
       </form>
     </div>
   );

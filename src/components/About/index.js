@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import gsap from "gsap";
 import SkillItem from "../EachSkillItem";
 
 import "./index.css";
@@ -56,64 +58,84 @@ const SkillsList = [
   },
 ];
 
-const About = () => (
-  <>
-    <div className="about-container">
-      <h1 className="hello-viewer">Hello, Viewer,</h1>
+const About = () => {
+  useEffect(() => {
+    gsap.fromTo(
+      ".description-para",
+      {
+        opacity: 0,
+      },
+      { opacity: 1, duration: 2 }
+    );
 
-      <h1 className="hello-viewer">
-        I'm <span className="bharath-name">Bharath.</span>
-      </h1>
-      <p className="description-para">
-        In this section,
-        <br />
-        I'm going to provide an overview of
-        <br /> my <span className="bharath-name">Education</span> ,
-        <span className="bharath-name">work</span>,
-        <span className="bharath-name">experience</span> and{" "}
-        <span className="bharath-name">skill</span> .
-        <br /> I have created a collection of{" "}
-        <span className="bharath-name">projects</span> that showcase
-        <br /> my <span className="bharath-name">skills</span> and{" "}
-        <span className="bharath-name">abilities</span> in{" "}
-        <span className="bharath-name">MERN Stack</span> technologies
-      </p>
+    gsap.fromTo(
+      ".education-container",
+      {
+        x: -500,
+      },
+      { x: 10, duration: 1 }
+    );
+  }, []);
 
-      <div className="skills-education-con">
-        <div className="education-container">
-          <h1 className="education-heading">Education</h1>
-          <hr />
-          <div className="course-container">
-            <h1 className="bharath-name-college">Noble College</h1>
-            <p>Degree</p>
-            <p>B.com (computers)</p>
-            <p>2019-2022</p>
+  return (
+    <>
+      <div className="about-container">
+        <h1 className="hello-viewer">Hello, Viewer,</h1>
+
+        <h1 className="hello-viewer">
+          I'm <span className="bharath-name">Bharath.</span>
+        </h1>
+        <p className="description-para">
+          In this section,
+          <br />
+          I'm going to provide an overview of
+          <br /> my <span className="bharath-name">Education</span> ,
+          <span className="bharath-name">work</span>,
+          <span className="bharath-name">experience</span> and{" "}
+          <span className="bharath-name">skill</span> .
+          <br /> I have created a collection of{" "}
+          <span className="bharath-name">projects</span> that showcase
+          <br /> my <span className="bharath-name">skills</span> and{" "}
+          <span className="bharath-name">abilities</span> in{" "}
+          <span className="bharath-name">MERN Stack</span> technologies
+        </p>
+
+        <div className="skills-education-con">
+          <div className="education-container">
+            <h1 className="education-heading">Education</h1>
+            <hr />
+            <div className="course-container">
+              <h1 className="bharath-name-college">Noble College</h1>
+              <p>Degree</p>
+              <p>B.com (computers)</p>
+              <p>2019-2022</p>
+            </div>
+
+            <div className="course-container">
+              <h1 className="bharath-name-college">Noble College</h1>
+              <p>Intermediate</p>
+              <p>C.E.C</p>
+              <p>2017-2019</p>
+            </div>
+
+            <div className="course-container">
+              <h1 className="bharath-name-college">
+                George Coronation High School
+              </h1>
+              <p>Board Of Secondary Education</p>
+
+              <p>2016-2017</p>
+            </div>
           </div>
-
-          <div className="course-container">
-            <h1 className="bharath-name-college">Noble College</h1>
-            <p>Intermediate</p>
-            <p>C.E.C</p>
-            <p>2017-2019</p>
-          </div>
-
-          <div className="course-container">
-            <h1 className="bharath-name-college">
-              George Coronation High School
-            </h1>
-            <p>Board Of Secondary Education</p>
-
-            <p>2016-2017</p>
-          </div>
+          <ul>
+            {SkillsList.map((each) => (
+              <SkillItem item={each} key={each.id} />
+            ))}
+          </ul>
         </div>
-        <ul>
-          {SkillsList.map((each) => (
-            <SkillItem item={each} key={each.id} />
-          ))}
-        </ul>
       </div>
-    </div>
-  </>
-);
+    </>
+  );
+};
 
 export default About;

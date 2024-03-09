@@ -1,7 +1,18 @@
+import { useEffect } from "react";
+import gsap from "gsap";
 import "./index.css";
 const ProjectItem = (props) => {
+  useEffect(() => {
+    gsap.fromTo(
+      ".project-content-container",
+      {
+        opacity: 0,
+      },
+      { opacity: 1, duration: 2 }
+    );
+  }, []);
   const { single } = props;
-  const { id, name, url, category, repoLink, imageUrl } = single;
+  const { name, url, repoLink, imageUrl } = single;
   return (
     <li className="project-container">
       <div className="project-content-container">

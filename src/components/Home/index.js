@@ -1,8 +1,27 @@
+import { useEffect } from "react";
 import gsap from "gsap";
 
 import "./index.css";
 
 const Home = () => {
+  useEffect(() => {
+    gsap.fromTo(
+      ".image-container",
+      {
+        x: -500,
+      },
+      { x: 60, duration: 1 }
+    );
+
+    gsap.fromTo(
+      ".content-container",
+      {
+        x: 800,
+      },
+      { x: -50, duration: 1 }
+    );
+  }, []);
+
   return (
     <>
       <div className="home-container">
