@@ -42,6 +42,15 @@ const projectsDetails = [
     imageUrl:
       "https://res.cloudinary.com/dr2jqbir9/image/upload/v1708931638/Screenshot_9_gjpu7w.png",
   },
+   {
+    id: uuidv4(),
+    name: "Jobby App",
+    url: "https://bharathjobbyapp.ccbp.tech/login",
+    category: "SINGLE PAGE",
+    repoLink: "https://github.com/bharathane/jobbyApp.git",
+    imageUrl:
+      "https://res.cloudinary.com/dr2jqbir9/image/upload/v1708950765/jobby_app_t3qy2n.png",
+  },
   {
     id: uuidv4(),
     name: "Rock Paper Scissor",
@@ -62,31 +71,14 @@ const projectsDetails = [
   },
   {
     id: uuidv4(),
-    name: "Gradient Generator",
-    url: "https://gradient-generator-1btp.onrender.com/",
+    name: "Taskify",
+    url: "https://taskify-frontend-ten.vercel.app/",
     category: "SINGLE PAGE",
-    repoLink: "https://github.com/bharathane/Gradient-Generator.git",
+    repoLink: "https://github.com/bharathane/Taskify-frontend.git",
     imageUrl:
-      "https://res.cloudinary.com/dr2jqbir9/image/upload/v1708932532/Screenshot_2024-02-26_125827_iyjpwh.png",
+      "https://res.cloudinary.com/dr2jqbir9/image/upload/v1710765976/Taskify_ahzbfv.png",
   },
-  {
-    id: uuidv4(),
-    name: "Meme Generator",
-    url: "https://meme-generator-17xl.onrender.com/",
-    category: "SINGLE PAGE",
-    repoLink: "https://github.com/bharathane/Meme-Generator.git",
-    imageUrl:
-      "https://res.cloudinary.com/dr2jqbir9/image/upload/v1708932651/meme-genarator_lyovnu.png",
-  },
-  {
-    id: uuidv4(),
-    name: "Jobby App",
-    url: "https://bharathjobbyapp.ccbp.tech/login",
-    category: "SINGLE PAGE",
-    repoLink: "https://github.com/bharathane/jobbyApp.git",
-    imageUrl:
-      "https://res.cloudinary.com/dr2jqbir9/image/upload/v1708950765/jobby_app_t3qy2n.png",
-  },
+  
   {
     id: uuidv4(),
     name: "Prime Video",
@@ -114,6 +106,33 @@ const projectsDetails = [
     imageUrl:
       "https://res.cloudinary.com/dr2jqbir9/image/upload/v1709026083/ccbp-timeline_hndyt7.png",
   },
+    {
+    id: uuidv4(),
+    name: "Emoji Game",
+    url: "https://emoji-game-neon.vercel.app/",
+    category: "SINGLE PAGE",
+    repoLink: "https://github.com/bharathane/Emoji-Game.git",
+    imageUrl:
+      "https://res.cloudinary.com/dr2jqbir9/image/upload/v1709186749/Emoji-Game_y7ae6x.png",
+  },
+   {
+    id: uuidv4(),
+    name: "Gradient Generator",
+    url: "https://gradient-generator-1btp.onrender.com/",
+    category: "SINGLE PAGE",
+    repoLink: "https://github.com/bharathane/Gradient-Generator.git",
+    imageUrl:
+      "https://res.cloudinary.com/dr2jqbir9/image/upload/v1708932532/Screenshot_2024-02-26_125827_iyjpwh.png",
+  },
+    {
+    id: uuidv4(),
+    name: "Meme Generator",
+    url: "https://meme-generator-17xl.onrender.com/",
+    category: "SINGLE PAGE",
+    repoLink: "https://github.com/bharathane/Meme-Generator.git",
+    imageUrl:
+      "https://res.cloudinary.com/dr2jqbir9/image/upload/v1708932651/meme-genarator_lyovnu.png",
+  },
   {
     id: uuidv4(),
     name: "CoWin Dashboard",
@@ -140,15 +159,6 @@ const projectsDetails = [
     repoLink: "https://github.com/bharathane/Stop-Watch.git",
     imageUrl:
       "https://res.cloudinary.com/dr2jqbir9/image/upload/v1709186611/Stop-Watch_hlnllj.png",
-  },
-  {
-    id: uuidv4(),
-    name: "Emoji Game",
-    url: "https://emoji-game-neon.vercel.app/",
-    category: "SINGLE PAGE",
-    repoLink: "https://github.com/bharathane/Emoji-Game.git",
-    imageUrl:
-      "https://res.cloudinary.com/dr2jqbir9/image/upload/v1709186749/Emoji-Game_y7ae6x.png",
   },
   {
     id: uuidv4(),
