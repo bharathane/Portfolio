@@ -41,7 +41,13 @@ const projectsDetails = [
     repoLink: "https://github.com/bharathane/NxtWatch.git",
     imageUrl:
       "https://res.cloudinary.com/dr2jqbir9/image/upload/v1708931638/Screenshot_9_gjpu7w.png",
-  },
+  },{id: uuidv4(),
+    name: "Daily MoodTracker",
+    url: "https://daily-mood-tracker.vercel.app/",
+    category: "SINGLE PAGE",
+    repoLink: "https://github.com/bharathane/Daily-mood-tracker.git",
+    imageUrl:
+      "https://res.cloudinary.com/dr2jqbir9/image/upload/v1713778518/datepicker_sfpz8a.png",},
    {
     id: uuidv4(),
     name: "Jobby App",
