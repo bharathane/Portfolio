@@ -35,6 +35,15 @@ const projectsDetails = [
   },
   {
     id: uuidv4(),
+    name: "FPM",
+    url: "https://fpm-frontend.vercel.app/",
+    category: "SINGLE PAGE",
+    repoLink: "https://github.com/bharathane/FPM-Frontend.git",
+    imageUrl:
+      "https://res.cloudinary.com/dr2jqbir9/image/upload/v1723781110/fpm_jd3e8y.png",
+  },
+  {
+    id: uuidv4(),
     name: "NXT Watch",
     url: "https://bharath359.ccbp.tech/",
     category: "SINGLE PAGE",
